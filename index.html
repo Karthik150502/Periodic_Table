@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=M+PLUS+1p:wght@100&family=Montserrat:wght@200&family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .html{
+        overflow-y: hidden;
+    }
+    .main{
+        position: absolute;
+        left: 150px;
+        bottom: 10px;
+
+    }
+    body{
+        background-image: url("https://wallpapercave.com/dwp2x/wp12430431.jpg");
+        background-size: cover;
+    }
+    .main h1{
+        font-size: 60px;
+        color: white;
+        position: relative;
+        top: 80px;
+        right: 40px;
+        text-align: center;
+    }
+
+    *{
+        font-weight: 900;
+        font-family: 'Cinzel', serif;
+        font-family: 'M PLUS 1p', sans-serif;
+    
+    }
+    .boxes{
+        transition:all 0.2s ease 0.05s;
+        height: 50px;
+        aspect-ratio: 1/1;
+        background-color: yellowgreen;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .boxes:hover{
+        transform: scale(1.5);
+    }
+    .boxes .symbol{
+        text-align: center;
+    }
+    .boxes .elename{
+        text-align: center;
+    }
+      div[class="boxes"] .atomno{
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        top: 50px;
+    }
+
+    div[class="boxes"] .atomno>h6{
+        position: relative;
+        left: 5px;
+        bottom:72px;
+    }
+
+    div[class="boxes"] .symbol{
+        position: relative;
+        bottom: 72px;  
+    }
+
+    div[class="boxes"] .elename{
+        font-size: 8px;
+        position: relative;
+        bottom: 95px;    
+    }
+
+    .transp{
+        height: 50px;
+        aspect-ratio: 1/1;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+
+    #indigo{
+        background-color: darkblue;
+    }
+    #maroon{
+        background-color: maroon;
+    }
+    #paledarkblue{
+        background-color: rgb(30, 44, 78);
+    }
+    #palemaroon{
+        background-color: rgb(136, 47, 47);
+    }
+
+    #greenbrown{
+        background-color: rgb(88, 42, 9);
+    }
+    #greendarkblue{
+        background-color: rgb(6, 71, 71);
+    }
+    #purple{
+        background-color: rgb(68, 30, 123);
+    }
+    #lightdarkblue{
+        background-color: rgb(25, 80, 124);
+    }
+    #darkgrey{
+        background-color: rgb(77, 75, 75);
+    }
+
+
+
+    [name="radium"]:hover{
+        box-shadow: 0px 0px 10px #8cff00,
+                0px 0px 10px #8cff00,
+                0px 0px 25px #8cff00,
+                0px 0px 25px #8cff00,
+                0px 0px 25px #8cff00,
+                0px 0px 25px #8cff00,
+                0px 0px 25px #8cff00,
+                0px 0px 50px #8cff00,
+                0px 0px 50px #8cff00,
+                0px 0px 50px #008915,
+                0px 0px 150px #008915,
+                0px 10px 100px #008915,
+                0px 10px 100px #008915,
+                0px 10px 100px #008915,
+                0px 10px 100px #008915,
+                0px -10px 100px #008915,
+                0px -10px 100px #008915;
+    }
+
+
+    [name="phosphorous"]:hover{
+        box-shadow: 0px 0px 10px #6af958,
+                0px 0px 10px #6af958,
+                0px 0px 25px #6af958,
+                0px 0px 25px #6af958,
+                0px 0px 25px #6af958,
+                0px 0px 25px #6af958,
+                0px 0px 25px #6af958,
+                0px 0px 50px #6af958,
+                0px 0px 50px #6af958,
+                0px 0px 50px #8cff00,
+                0px 0px 150px #8cff00,
+                0px 10px 100px #8cff00,
+                0px 10px 100px #8cff00,
+                0px 10px 100px #8cff00,
+                0px 10px 100px #8cff00,
+                0px -10px 100px #8cff00,
+                0px -10px 100px #8cff00;
+    }
+</style>
+
+<body>
+    
+    <div class="main">
+        <h1>The Periodic Table!</h1>
+        <table class="tab">
+
+            <tr>
+                <td>
+                    <div class="boxes" name="thebox1" id="indigo">
+                        <div class="atomno"><h6>1</h6></div>
+                        <h3 class="symbol">H</h3>
+                        <div class="elename">
+                            <h5>Hydrogen</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="transp"></div>
+                </td>
+
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+
+                <td>
+                    <div class="transp"></div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="maroon">
+                        <div class="atomno"><h6>2</h6></div>
+                        <h3 class="symbol">He</h3>
+                        <div class="elename">
+                            <h5>Helium</h5>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <div class="boxes" name="thebox1" id="paledarkblue">
+                        <div class="atomno"><h6>3</h6></div>
+                        <h3 class="symbol">Li</h3>
+                        <div class="elename">
+                            <h5>Lithium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="palemaroon">
+                        <div class="atomno"><h6>4</h6></div>
+                        <h3 class="symbol">Be</h3>
+                        <div class="elename">
+                            <h5>Beryllium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>5</h6></div>
+                        <h3 class="symbol">B</h3>
+                        <div class="elename">
+                            <h5>Boron</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="indigo">
+                        <div class="atomno"><h6>6</h6></div>
+                        <h3 class="symbol">C</h3>
+                        <div class="elename">
+                            <h5>Carbon</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1"" id="indigo">
+                        <div class="atomno"><h6>7</h6></div>
+                        <h3 class="symbol">N</h3>
+                        <div class="elename">
+                            <h5>Nitrogen</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1"" id="indigo">
+                        <div class="atomno"><h6>8</h6></div>
+                        <h3 class="symbol">O</h3>
+                        <div class="elename">
+                            <h5>Oxygen</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1"" id="indigo">
+                        <div class="atomno"><h6>9</h6></div>
+                        <h3 class="symbol">F</h3>
+                        <div class="elename">
+                            <h5>fluorine</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="maroon">
+                        <div class="atomno"><h6>10</h6></div>
+                        <h3 class="symbol">Ne</h3>
+                        <div class="elename">
+                            <h5>Neon</h5>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <div class="boxes" name="thebox1" id="paledarkblue">
+                        <div class="atomno"><h6>11</h6></div>
+                        <h3 class="symbol">Na</h3>
+                        <div class="elename">
+                            <h5>Sodium</h5>
+                        </div>
+                    </div>
+
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="palemaroon">
+                        <div class="atomno"><h6>12</h6></div>
+                        <h3 class="symbol">Mg</h3>
+                        <div class="elename">
+                            <h5>Magnesium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greendarkblue">
+                        <div class="atomno"><h6>13</h6></div>
+                        <h3 class="symbol">Al</h3>
+                        <div class="elename">
+                            <h5>Aluminium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>14</h6></div>
+                        <h3 class="symbol">Si</h3>
+                        <div class="elename">
+                            <h5>Silicon</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="phosphorous" id="indigo">
+                        <div class="atomno"><h6>15</h6></div>
+                        <h3 class="symbol">P</h3>
+                        <div class="elename">
+                            <h5>Phosphorous</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="indigo">
+                        <div class="atomno"><h6>16</h6></div>
+                        <h3 class="symbol">S</h3>
+                        <div class="elename">
+                            <h5>Sulphur</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="indigo">
+                        <div class="atomno"><h6>17</h6></div>
+                        <h3 class="symbol">Cl</h3>
+                        <div class="elename">
+                            <h5>Chlorine</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="maroon">
+                        <div class="atomno"><h6>18</h6></div>
+                        <h3 class="symbol">Ar</h3>
+                        <div class="elename">
+                            <h5>Argon</h5>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <div class="boxes" name="thebox1" id="paledarkblue"> 
+                        <div class="atomno"><h6>19</h6></div>
+                        <h3 class="symbol">K</h3>
+                        <div class="elename">
+                            <h5>Potassium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="palemaroon">
+                        <div class="atomno"><h6>20</h6></div>
+                        <h3 class="symbol">Ca</h3>
+                        <div class="elename">
+                            <h5>Calcium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>21</h6></div>
+                        <h3 class="symbol">Sc</h3>
+                        <div class="elename">
+                            <h5>Scandium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>22</h6></div>
+                        <h3 class="symbol">Ti</h3>
+                        <div class="elename">
+                            <h5>Titanium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>23</h6></div>
+                        <h3 class="symbol">V</h3>
+                        <div class="elename">
+                            <h5>Vanadium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>24</h6></div>
+                        <h3 class="symbol">Cr</h3>
+                        <div class="elename">
+                            <h5>Chromium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>25</h6></div>
+                        <h3 class="symbol">Mn</h3>
+                        <div class="elename">
+                            <h5>Manganese</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>26</h6></div>
+                        <h3 class="symbol">Fe</h3>
+                        <div class="elename">
+                            <h5>Iron</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>27</h6></div>
+                        <h3 class="symbol">Co</h3>
+                        <div class="elename">
+                            <h5>Cobalt</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>28</h6></div>
+                        <h3 class="symbol">Ni</h3>
+                        <div class="elename">
+                            <h5>Nickel</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>29</h6></div>
+                        <h3 class="symbol">Cu</h3>
+                        <div class="elename">
+                            <h5>Copper</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>30</h6></div>
+                        <h3 class="symbol">Zn</h3>
+                        <div class="elename">
+                            <h5>Zinc</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greendarkblue">
+                        <div class="atomno"><h6>31</h6></div>
+                        <h3 class="symbol">Ga</h3>
+                        <div class="elename">
+                            <h5>Gallium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>32</h6></div>
+                        <h3 class="symbol">Ge</h3>
+                        <div class="elename">
+                            <h5>Germanium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>33</h6></div>
+                        <h3 class="symbol">As</h3>
+                        <div class="elename">
+                            <h5>Arsenic</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="indigo">
+                        <div class="atomno"><h6>34</h6></div>
+                        <h3 class="symbol">Se</h3>
+                        <div class="elename">
+                            <h5>Selenium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="indigo">
+                        <div class="atomno"><h6>35</h6></div>
+                        <h3 class="symbol">Br</h3>
+                        <div class="elename">
+                            <h5>Bromine</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="maroon">
+                        <div class="atomno"><h6>36</h6></div>
+                        <h3 class="symbol">Kr</h3>
+                        <div class="elename">
+                            <h5>Krypton</h5>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <div class="boxes" name="thebox1" id="paledarkblue">
+                        <div class="atomno"><h6>37</h6></div>
+                        <h3 class="symbol">Rb</h3>
+                        <div class="elename">
+                            <h5>Rubidium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="palemaroon">
+                        <div class="atomno"><h6>38</h6></div>
+                        <h3 class="symbol">Sr</h3>
+                        <div class="elename">
+                            <h5>Strontium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>39</h6></div>
+                        <h3 class="symbol">Y</h3>
+                        <div class="elename">
+                            <h5>Yttrium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>40</h6></div>
+                        <h3 class="symbol">Zr</h3>
+                        <div class="elename">
+                            <h5>Zirconium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>41</h6></div>
+                        <h3 class="symbol">Nb</h3>
+                        <div class="elename">
+                            <h5>Niobium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>42</h6></div>
+                        <h3 class="symbol">Mo</h3>
+                        <div class="elename">
+                            <h5>Molybdenum</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>43</h6></div>
+                        <h3 class="symbol">Tc</h3>
+                        <div class="elename">
+                            <h5>Technetium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>44</h6></div>
+                        <h3 class="symbol">Ru</h3>
+                        <div class="elename">
+                            <h5>Ruthenium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>45</h6></div>
+                        <h3 class="symbol">Rh</h3>
+                        <div class="elename">
+                            <h5>Rhodium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>46</h6></div>
+                        <h3 class="symbol">Pd</h3>
+                        <div class="elename">
+                            <h5>Palladium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>47</h6></div>
+                        <h3 class="symbol">Ag</h3>
+                        <div class="elename">
+                            <h5>Silver</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>48</h6></div>
+                        <h3 class="symbol">Cd</h3>
+                        <div class="elename">
+                            <h5>Cadmium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>49</h6></div>
+                        <h3 class="symbol">In</h3>
+                        <div class="elename">
+                            <h5>Indium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greendarkblue">
+                        <div class="atomno"><h6>50</h6></div>
+                        <h3 class="symbol">Sn</h3>
+                        <div class="elename">
+                            <h5>Sn</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greendarkblue">
+                        <div class="atomno"><h6>51</h6></div>
+                        <h3 class="symbol">Sb</h3>
+                        <div class="elename">
+                            <h5>Antimony</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>52</h6></div>
+                        <h3 class="symbol">Te</h3>
+                        <div class="elename">
+                            <h5>Tellurium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="indigo">
+                        <div class="atomno"><h6>53</h6></div>
+                        <h3 class="symbol">I</h3>
+                        <div class="elename">
+                            <h5>Iodine</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="maroon">
+                        <div class="atomno"><h6>54</h6></div>
+                        <h3 class="symbol">Xe</h3>
+                        <div class="elename">
+                            <h5>Xenon</h5>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <div class="boxes" name="thebox1" id="paledarkblue">
+                        <div class="atomno"><h6>55</h6></div>
+                        <h3 class="symbol">Cs</h3>
+                        <div class="elename">
+                            <h5>Caesium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="palemaroon">
+                        <div class="atomno"><h6>56</h6></div>
+                        <h3 class="symbol">Ba</h3>
+                        <div class="elename">
+                            <h5>Barium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>57</h6></div>
+                        <h3 class="symbol">La</h3>
+                        <div class="elename">
+                            <h5>Lanthanium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>72</h6></div>
+                        <h3 class="symbol">Hf</h3>
+                        <div class="elename">
+                            <h5>Halfnium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>73</h6></div>
+                        <h3 class="symbol">Ta</h3>
+                        <div class="elename">
+                            <h5>Tantalum</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>74</h6></div>
+                        <h3 class="symbol">W</h3>
+                        <div class="elename">
+                            <h5>Tungsten</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>75</h6></div>
+                        <h3 class="symbol">Re</h3>
+                        <div class="elename">
+                            <h5>Rhenium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>76</h6></div>
+                        <h3 class="symbol">Os</h3>
+                        <div class="elename">
+                            <h5>Osmium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>77</h6></div>
+                        <h3 class="symbol">Ir</h3>
+                        <div class="elename">
+                            <h5>Indium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>78</h6></div>
+                        <h3 class="symbol">Pt</h3>
+                        <div class="elename">
+                            <h5>Platinum</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>79</h6></div>
+                        <h3 class="symbol">Au</h3>
+                        <div class="elename">
+                            <h5>Gold</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>80</h6></div>
+                        <h3 class="symbol">Hg</h3>
+                        <div class="elename">
+                            <h5>Mercury</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greendarkblue">
+                        <div class="atomno"><h6>81</h6></div>
+                        <h3 class="symbol">Tl</h3>
+                        <div class="elename">
+                            <h5>Thalium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greendarkblue">
+                        <div class="atomno"><h6>82</h6></div>
+                        <h3 class="symbol">Pb</h3>
+                        <div class="elename">
+                            <h5>Lead</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greendarkblue">
+                        <div class="atomno"><h6>83</h6></div>
+                        <h3 class="symbol">Bi</h3>
+                        <div class="elename">
+                            <h5>Bismuth</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greendarkblue">
+                        <div class="atomno"><h6>84</h6></div>
+                        <h3 class="symbol">Po</h3>
+                        <div class="elename">
+                            <h5>Polonium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="greendarkblue">
+                        <div class="atomno"><h6>85</h6></div>
+                        <h3 class="symbol">At</h3>
+                        <div class="elename">
+                            <h5>Astaline</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="maroon">
+                        <div class="atomno"><h6>86</h6></div>
+                        <h3 class="symbol">Rn</h3>
+                        <div class="elename">
+                            <h5>Radon</h5>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <div class="boxes" name="thebox1" id="paledarkblue">
+                        <div class="atomno"><h6>87</h6></div>
+                        <h3 class="symbol">Fr</h3>
+                        <div class="elename">
+                            <h5>Francium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="radium" id="palemaroon">
+                        <div class="atomno"><h6>88</h6></div>
+                        <h3 class="symbol">Ra</h3>
+                        <div class="elename">
+                            <h5>Radium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>89</h6></div>
+                        <h3 class="symbol">Ac</h3>
+                        <div class="elename">
+                            <h5>Actinium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>104</h6></div>
+                        <h3 class="symbol">Rf</h3>
+                        <div class="elename">
+                            <h5>Rutherfordium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>105</h6></div>
+                        <h3 class="symbol">Db</h3>
+                        <div class="elename">
+                            <h5>Dubnium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>106</h6></div>
+                        <h3 class="symbol">Sg</h3>
+                        <div class="elename">
+                            <h5>Seaborgium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="purple">
+                        <div class="atomno"><h6>107</h6></div>
+                        <h3 class="symbol">Bh</h3>
+                        <div class="elename">
+                            <h5>Bohrium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>108</h6></div>
+                        <h3 class="symbol">Hs</h3>
+                        <div class="elename">
+                            <h5>Hassium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>109</h6></div>
+                        <h3 class="symbol">Mt</h3>
+                        <div class="elename">
+                            <h5>Meitnerium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>110</h6></div>
+                        <h3 class="symbol">Ds</h3>
+                        <div class="elename">
+                            <h5>Darmstadium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>111</h6></div>
+                        <h3 class="symbol">Rg</h3>
+                        <div class="elename">
+                            <h5>Roentgenium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>112</h6></div>
+                        <h3 class="symbol">Cn</h3>
+                        <div class="elename">
+                            <h5>Copernicium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>113</h6></div>
+                        <h3 class="symbol">Nh</h3>
+                        <div class="elename">
+                            <h5>Nihonium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>114</h6></div>
+                        <h3 class="symbol">Fl</h3>
+                        <div class="elename">
+                            <h5>Felorvium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>115</h6></div>
+                        <h3 class="symbol">Mc</h3>
+                        <div class="elename">
+                            <h5>Moscovium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>116</h6></div>
+                        <h3 class="symbol">Lv</h3>
+                        <div class="elename">
+                            <h5>Livermorium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>117</h6></div>
+                        <h3 class="symbol">Ts</h3>
+                        <div class="elename">
+                            <h5>Tennesine</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="darkgrey">
+                        <div class="atomno"><h6>118</h6></div>
+                        <h3 class="symbol">Og</h3>
+                        <div class="elename">
+                            <h5>Oganesson</h5>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+
+                <td>
+                    <div class="transp"></div>
+                </td>
+
+                <td>
+                    <div class="transp"></div>
+                </td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>58</h6></div>
+                        <h3 class="symbol">Ce</h3>
+                        <div class="elename">
+                            <h5>Cerium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>59</h6></div>
+                        <h3 class="symbol">Pr</h3>
+                        <div class="elename">
+                            <h5>Praseodymium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>60</h6></div>
+                        <h3 class="symbol">Nd</h3>
+                        <div class="elename">
+                            <h5>Neodymium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>61</h6></div>
+                        <h3 class="symbol">Pm</h3>
+                        <div class="elename">
+                            <h5>Promethium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>62</h6></div>
+                        <h3 class="symbol">Sm</h3>
+                        <div class="elename">
+                            <h5>Samarium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>63</h6></div>
+                        <h3 class="symbol">Eu</h3>
+                        <div class="elename">
+                            <h5>Europium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>64</h6></div>
+                        <h3 class="symbol">Gd</h3>
+                        <div class="elename">
+                            <h5>Gadolinium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>65</h6></div>
+                        <h3 class="symbol">Tb</h3>
+                        <div class="elename">
+                            <h5>Terbium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>66</h6></div>
+                        <h3 class="symbol">Dy</h3>
+                        <div class="elename">
+                            <h5>Dyprosium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>67</h6></div>
+                        <h3 class="symbol">Ho</h3>
+                        <div class="elename">
+                            <h5>Holmium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>68</h6></div>
+                        <h3 class="symbol">Er</h3>
+                        <div class="elename">
+                            <h5>Erbium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>69</h6></div>
+                        <h3 class="symbol">Tm</h3>
+                        <div class="elename">
+                            <h5>Thulium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>70</h6></div>
+                        <h3 class="symbol">Yb</h3>
+                        <div class="elename">
+                            <h5>Ytterbium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="lightdarkblue">
+                        <div class="atomno"><h6>71</h6></div>
+                        <h3 class="symbol">Lu</h3>
+                        <div class="elename">
+                            <h5>Lutetium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="transp"> </div>
+                </td>
+
+
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <div class="transp"></div>
+                </td>
+                
+
+                <td>
+                    <div class="transp"></div>
+                </td>
+
+                <td>
+                    <div class="transp"></div>
+                </td>
+
+                <td>
+                    <div class="transp"></div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>90</h6></div>
+                        <h3 class="symbol">Th</h3>
+                        <div class="elename">
+                            <h5>Thorium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>91</h6></div>
+                        <h3 class="symbol">Pa</h3>
+                        <div class="elename">
+                            <h5>Protactinium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>92</h6></div>
+                        <h3 class="symbol">U</h3>
+                        <div class="elename">
+                            <h5>Uranium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>93</h6></div>
+                        <h3 class="symbol">Np</h3>
+                        <div class="elename">
+                            <h5>Neptunium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>94</h6></div>
+                        <h3 class="symbol">Pu</h3>
+                        <div class="elename">
+                            <h5>Plutonium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>95</h6></div>
+                        <h3 class="symbol">Am</h3>
+                        <div class="elename">
+                            <h5>Americium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>96</h6></div>
+                        <h3 class="symbol">Cm</h3>
+                        <div class="elename">
+                            <h5>Curium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>97</h6></div>
+                        <h3 class="symbol">Bk</h3>
+                        <div class="elename">
+                            <h5>Berklium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>98</h6></div>
+                        <h3 class="symbol">Cf</h3>
+                        <div class="elename">
+                            <h5>Californium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>99</h6></div>
+                        <h3 class="symbol">Es</h3>
+                        <div class="elename">
+                            <h5>Einsteinium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>100</h6></div>
+                        <h3 class="symbol">Fm</h3>
+                        <div class="elename">
+                            <h5>Fermium</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>101</h6></div>
+                        <h3 class="symbol">Md</h3>
+                        <div class="elename">
+                            <h5>Mendelevium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>102</h6></div>
+                        <h3 class="symbol">No</h3>
+                        <div class="elename">
+                            <h5>Nobelium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="boxes" name="thebox1" id="greenbrown">
+                        <div class="atomno"><h6>103</h6></div>
+                        <h3 class="symbol">Lr</h3>
+                        <div class="elename">
+                            <h5>Lawrencium</h5>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="transp">
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+
+                    
+        </table>
+    </div>
+
+
+</body>
+</html>
